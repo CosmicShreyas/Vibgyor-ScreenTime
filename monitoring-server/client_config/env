@@ -1,0 +1,24 @@
+# Auto-generated client configuration served to agents via /api/client-env.
+# The client polls this ~every 60s and applies changes to intervals/thresholds.
+# NOTE: client-only keys (OTA_*, DASHBOARD_URL) are intentionally NOT managed
+# here — the agent preserves those from its own local .env so a config push can
+# never disable auto-update. Keep SERVER_URL/AUTH_TOKEN in sync with the shipped
+# ScreenTime/.env.
+
+SERVER_URL=https://screentimeapi.vibgyor.co.in/api/monitoring/data
+AUTH_TOKEN=vibgyorseek-client-token-2024
+
+# Intervals
+SCREENSHOT_INTERVAL_MINUTES=5
+DATA_SEND_INTERVAL_MINUTES=1
+LOCATION_UPDATE_INTERVAL_MINUTES=30
+
+# Activity Tracking
+IDLE_THRESHOLD_SECONDS=300
+APP_USAGE_POLL_INTERVAL_SECONDS=10
+
+# Screenshot Settings
+SCREENSHOT_QUALITY=75
+
+# Logging
+LOG_LEVEL=INFO
