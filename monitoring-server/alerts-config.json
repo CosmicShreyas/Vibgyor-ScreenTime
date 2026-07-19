@@ -1,8 +1,0 @@
-{
-  "enabled": true,
-  "highIdleMinutes": 120,
-  "lowProductivityScore": 40,
-  "offlineDuringShiftMinutes": 60,
-  "unproductiveSiteMinutes": 60,
-  "emailAdminsOnAlert": false
-}
