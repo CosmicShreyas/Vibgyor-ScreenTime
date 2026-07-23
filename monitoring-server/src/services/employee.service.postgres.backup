@@ -1,0 +1,304 @@
+import { Employee, EmployeeSummary, EmployeeDetail } from '../models/employee.model';
+import { logger } from '../utils/logger';
+import { database } from '../utils/database';
+import { isValidEmployeeName } from '../models/validation.schemas';
+
+/**
+ * Service for managing employee data
+ */
+export class EmployeeService {
+  /**
+   * Get or create employee by name (upsert)
+   * Creates a new employee if not exists, updates last_seen if exists
+   * 
+   * @param name - Employee name
+   * @returns Employee record
+   * @throws Error if name is invalid or database operation fails
+   */
+  async upsertEmployee(name: string): Promise<Employee> {
+    // Validate employee name
+    if (!isValidEmployeeName(name)) {
+      throw new Error('Invalid employee name');
+    }
+
+    const trimmedName = name.trim();
+    logger.info(`Upserting employee: ${trimmedName}`);
+
+    try {
+      // Use INSERT ... ON CONFLICT to upsert
+      // If employee exists, update last_seen; otherwise create new record
+      const result = await database.query(
+        `INSERT INTO employees (name, first_seen, last_seen)
+         VALUES ($1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
+         ON CONFLICT (name) 
+         DO UPDATE SET last_seen = CURRENT_TIMESTAMP, updated_at = CURRENT_TIMESTAMP
+         RETURNING id, name, first_seen, last_seen, created_at, updated_at`,
+        [trimmedName]
+      );
+
+      const row = result.rows[0];
+      const employee: Employee = {
+        id: row.id,
+        name: row.name,
+        first_seen: row.first_seen,
+        last_seen: row.last_seen,
+        created_at: row.created_at,
+        updated_at: row.updated_at,
+      };
+
+      logger.info(`Employee upserted successfully: ${employee.id}`);
+      return employee;
+    } catch (error) {
+      logger.error(`Failed to upsert employee ${trimmedName}:`, error);
+      throw error;
+    }
+  }
+
+  /**
+   * Get employee by name
+   * 
+   * @param name - Employee name
+   * @returns Employee record or null if not found
+   */
+  async getEmployeeByName(name: string): Promise<Employee | null> {
+    if (!isValidEmployeeName(name)) {
+      throw new Error('Invalid employee name');
+    }
+
+    const trimmedName = name.trim();
+    logger.debug(`Fetching employee by name: ${trimmedName}`);
+
+    try {
+      const result = await database.query(
+        `SELECT id, name, first_seen, last_seen, created_at, updated_at
+         FROM employees
+         WHERE name = $1`,
+        [trimmedName]
+      );
+
+      if (result.rows.length === 0) {
+        return null;
+      }
+
+      const row = result.rows[0];
+      return {
+        id: row.id,
+        name: row.name,
+        first_seen: row.first_seen,
+        last_seen: row.last_seen,
+        created_at: row.created_at,
+        updated_at: row.updated_at,
+      };
+    } catch (error) {
+      logger.error(`Failed to fetch employee ${trimmedName}:`, error);
+      throw error;
+    }
+  }
+
+  /**
+   * Get all employees
+   * 
+   * @returns Array of all employee records
+   */
+  async getAllEmployees(): Promise<Employee[]> {
+    logger.debug('Fetching all employees');
+
+    try {
+      const result = await database.query(
+        `SELECT id, name, first_seen, last_seen, created_at, updated_at
+         FROM employees
+         ORDER BY name ASC`
+      );
+
+      return result.rows.map((row) => ({
+        id: row.id,
+        name: row.name,
+        first_seen: row.first_seen,
+        last_seen: row.last_seen,
+        created_at: row.created_at,
+        updated_at: row.updated_at,
+      }));
+    } catch (error) {
+      logger.error('Failed to fetch all employees:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Get all employees with summary data
+   * 
+   * @returns Array of employee summaries with work time and status
+   */
+  async getAllEmployeesWithSummary(): Promise<EmployeeSummary[]> {
+    logger.info('Fetching all employees with summary data');
+
+    try {
+      // Query employees with aggregated activity data for today
+      const result = await database.query(
+        `SELECT 
+           e.name,
+           e.last_seen as last_update,
+           COALESCE(SUM(CASE 
+             WHEN DATE(al.timestamp) = CURRENT_DATE 
+             THEN al.work_seconds 
+             ELSE 0 
+           END), 0) as work_time_today,
+           COALESCE(SUM(CASE 
+             WHEN DATE(al.timestamp) = CURRENT_DATE 
+             THEN al.idle_seconds 
+             ELSE 0 
+           END), 0) as idle_time_today
+         FROM employees e
+         LEFT JOIN activity_logs al ON e.id = al.employee_id
+         GROUP BY e.id, e.name, e.last_seen
+         ORDER BY e.name ASC`
+      );
+
+      return result.rows.map((row) => {
+        const lastUpdate = new Date(row.last_update);
+        const now = new Date();
+        const minutesSinceUpdate = (now.getTime() - lastUpdate.getTime()) / 60000;
+
+        // Determine status based on last update time
+        let status: 'active' | 'idle' | 'offline';
+        if (minutesSinceUpdate < 15) {
+          status = 'active';
+        } else if (minutesSinceUpdate < 60) {
+          status = 'idle';
+        } else {
+          status = 'offline';
+        }
+
+        return {
+          name: row.name,
+          work_time_today: parseInt(row.work_time_today, 10),
+          idle_time_today: parseInt(row.idle_time_today, 10),
+          last_update: lastUpdate,
+          status,
+        };
+      });
+    } catch (error) {
+      logger.error('Failed to fetch employee summaries:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Get detailed data for specific employee
+   * 
+   * @param name - Employee name
+   * @returns Employee detail or null if not found
+   */
+  async getEmployeeDetail(name: string): Promise<EmployeeDetail | null> {
+    logger.info(`Fetching employee detail: ${name}`);
+    
+    if (!isValidEmployeeName(name)) {
+      throw new Error('Invalid employee name');
+    }
+
+    const trimmedName = name.trim();
+
+    try {
+      // Get employee record
+      const employee = await this.getEmployeeByName(trimmedName);
+      if (!employee) {
+        return null;
+      }
+
+      // Get latest activity log for current applications and browser tabs
+      const latestActivityResult = await database.query(
+        `SELECT applications, browser_tabs
+         FROM activity_logs
+         WHERE employee_id = $1
+         ORDER BY timestamp DESC
+         LIMIT 1`,
+        [employee.id]
+      );
+
+      let currentApplications: any[] = [];
+      let currentBrowserTabs: any[] = [];
+
+      if (latestActivityResult.rows.length > 0) {
+        const row = latestActivityResult.rows[0];
+        currentApplications = row.applications || [];
+        currentBrowserTabs = row.browser_tabs || [];
+      }
+
+      // Get activity history for today
+      const startOfDay = new Date();
+      startOfDay.setHours(0, 0, 0, 0);
+      
+      const endOfDay = new Date();
+      endOfDay.setHours(23, 59, 59, 999);
+
+      const activityHistoryResult = await database.query(
+        `SELECT timestamp, work_seconds, idle_seconds
+         FROM activity_logs
+         WHERE employee_id = $1
+           AND timestamp >= $2
+           AND timestamp <= $3
+         ORDER BY timestamp ASC`,
+        [employee.id, startOfDay, endOfDay]
+      );
+
+      const activityHistory = activityHistoryResult.rows.map((row) => ({
+        timestamp: row.timestamp,
+        work_seconds: row.work_seconds,
+        idle_seconds: row.idle_seconds,
+      }));
+
+      // Get recent screenshots (last 20)
+      const screenshotsResult = await database.query(
+        `SELECT id, captured_at
+         FROM screenshots
+         WHERE employee_id = $1
+         ORDER BY captured_at DESC
+         LIMIT 20`,
+        [employee.id]
+      );
+
+      const recentScreenshots = screenshotsResult.rows.map((row) => ({
+        id: row.id,
+        thumbnail_url: `/api/screenshots/${row.id}`,
+        full_url: `/api/screenshots/${row.id}`,
+        captured_at: row.captured_at,
+      }));
+
+      return {
+        name: employee.name,
+        current_applications: currentApplications,
+        current_browser_tabs: currentBrowserTabs,
+        activity_history: activityHistory,
+        recent_screenshots: recentScreenshots,
+      };
+    } catch (error) {
+      logger.error(`Failed to fetch employee detail for ${trimmedName}:`, error);
+      throw error;
+    }
+  }
+
+  /**
+   * Update employee last_seen timestamp
+   * 
+   * @param employeeId - Employee UUID
+   */
+  async updateLastSeen(employeeId: string): Promise<void> {
+    logger.debug(`Updating last_seen for employee: ${employeeId}`);
+
+    try {
+      await database.query(
+        `UPDATE employees 
+         SET last_seen = CURRENT_TIMESTAMP, updated_at = CURRENT_TIMESTAMP
+         WHERE id = $1`,
+        [employeeId]
+      );
+
+      logger.debug(`Updated last_seen for employee: ${employeeId}`);
+    } catch (error) {
+      logger.error(`Failed to update last_seen for employee ${employeeId}:`, error);
+      throw error;
+    }
+  }
+}
+
+export const employeeService = new EmployeeService();
