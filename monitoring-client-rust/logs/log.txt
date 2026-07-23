@@ -1,0 +1,317 @@
+2026-07-20T18:50:38.756062500+05:30  INFO ✅ Logging initialized at level: INFO
+2026-07-20T18:50:38.757402900+05:30  INFO 📁 Log file: logs\log.txt
+2026-07-20T18:50:38.757436200+05:30  INFO 🔄 Log mode: Single file (overwrites on restart)
+2026-07-20T18:50:38.757451400+05:30  INFO 🖥️  Console output: DISABLED (file only)
+2026-07-20T18:50:38.757489700+05:30  INFO ╔════════════════════════════════════════════════════════════╗
+2026-07-20T18:50:38.757522800+05:30  INFO ║  ScreenTime Employee Monitoring Client - Rust Edition     ║
+2026-07-20T18:50:38.757542300+05:30  INFO ╚════════════════════════════════════════════════════════════╝
+2026-07-20T18:50:38.757561800+05:30  INFO 
+2026-07-20T18:50:38.757578300+05:30  INFO 📦 Version: 1.0.0
+2026-07-20T18:50:38.757599800+05:30  INFO 💻 Platform: windows
+2026-07-20T18:50:38.757617800+05:30  INFO 🏗️  Architecture: x86_64
+2026-07-20T18:50:38.757635800+05:30  INFO 
+2026-07-20T18:50:38.757653600+05:30  INFO ⚙️  Loading configuration...
+2026-07-20T18:50:38.759163800+05:30  INFO ✅ Configuration loaded successfully
+2026-07-20T18:50:38.759255600+05:30  INFO Checking GitHub OTA update channel...
+2026-07-20T18:50:39.332598400+05:30  INFO No OTA update required. Current version: 1.0.0, latest version: 0.0.17
+2026-07-20T18:50:39.332994400+05:30  WARN ⚠️ ADMIN_PASSWORD not set in environment, using default
+2026-07-20T18:50:39.333045500+05:30  INFO 👤 Initializing employee information manager...
+2026-07-20T18:50:39.333159100+05:30  INFO 🔐 Initializing OTP client...
+2026-07-20T18:50:39.334810+05:30  INFO ✅ Employee info loaded: Shreyas (ID: VIB2-032)
+2026-07-20T18:50:39.335766900+05:30  INFO ✅ Employee information found, loading...
+2026-07-20T18:50:39.336396800+05:30  INFO ✅ Employee info loaded: Shreyas (ID: VIB2-032)
+2026-07-20T18:50:39.336474200+05:30  INFO 👤 Employee: Shreyas (ID: VIB2-032)
+2026-07-20T18:50:39.336501100+05:30  INFO 🔧 Initializing system tray...
+2026-07-20T18:50:39.336549100+05:30  INFO 🔧 Initializing system tray...
+2026-07-20T18:50:39.491289200+05:30  INFO ✅ System tray icon created (themed popup menu)
+2026-07-20T18:50:39.837455700+05:30  INFO ✅ System tray initialized
+2026-07-20T18:50:39.837612600+05:30  INFO ✅ System tray initialized
+2026-07-20T18:50:39.837767100+05:30  WARN Server URL does not use HTTPS: http://localhost:5000/api/monitoring/data. Data transmission may not be secure.
+2026-07-20T18:50:39.838571500+05:30  INFO HTTP transmitter initialized for http://localhost:5000/api/monitoring/data with 30s timeout
+2026-07-20T18:50:39.840802300+05:30  INFO 🔧 Initializing monitoring modules...
+2026-07-20T18:50:39.841298100+05:30  INFO ✅ Activity tracker initialized
+2026-07-20T18:50:40.369322800+05:30  INFO AppMonitor initialized with 52 system processes in filter list
+2026-07-20T18:50:40.369478+05:30  INFO ✅ Application monitor initialized
+2026-07-20T18:50:40.369529900+05:30  INFO BrowserMonitor initialized for platform: Windows
+2026-07-20T18:50:40.414577900+05:30  INFO ✅ Browser monitor initialized
+2026-07-20T18:50:40.414757+05:30  INFO AppUsageTracker initialized with poll_interval=10s
+2026-07-20T18:50:40.414803400+05:30  INFO ✅ Application usage tracker initialized
+2026-07-20T18:50:40.414829200+05:30  INFO BrowserTabUsageTracker initialized
+2026-07-20T18:50:40.414845800+05:30  INFO ✅ Browser tab usage tracker initialized
+2026-07-20T18:50:40.414868900+05:30  INFO ScreenshotCapture initialized with quality: 75
+2026-07-20T18:50:40.414943900+05:30  INFO ✅ Screenshot capture initialized
+2026-07-20T18:50:40.415083600+05:30  INFO ✅ Location tracker initialized
+2026-07-20T18:50:40.415123200+05:30  INFO ✅ Payload builder initialized
+2026-07-20T18:50:40.415147700+05:30  WARN Server URL does not use HTTPS: http://localhost:5000/api/monitoring/data. Data transmission may not be secure.
+2026-07-20T18:50:40.415707300+05:30  INFO HTTP transmitter initialized for http://localhost:5000/api/monitoring/data with 30s timeout
+2026-07-20T18:50:40.415748700+05:30  INFO ✅ HTTP transmitter initialized
+2026-07-20T18:50:40.419231+05:30  INFO Queue manager initialized with database: "C:\\Users\\Hi\\.vibgyorseek\\queue.db"
+2026-07-20T18:50:40.419280200+05:30  INFO ✅ Queue manager initialized
+2026-07-20T18:50:40.419307900+05:30  INFO Retry manager initialized
+2026-07-20T18:50:40.419322400+05:30  INFO ✅ Retry manager initialized
+2026-07-20T18:50:40.419408500+05:30  INFO ✅ Configuration watcher initialized
+2026-07-20T18:50:40.419425700+05:30  INFO ✅ All monitoring modules initialized successfully
+2026-07-20T18:50:40.419462400+05:30  INFO 🚀 Starting monitoring client...
+2026-07-20T18:50:40.419483400+05:30  INFO 🆔 Client ID: 2e637352-5a84-4254-9494-a4388ef91911
+2026-07-20T18:50:40.419498800+05:30  INFO 
+2026-07-20T18:50:40.419511200+05:30  INFO 📊 Monitoring Configuration:
+2026-07-20T18:50:40.419534100+05:30  INFO   ├─ Data Send Interval:     1 minutes
+2026-07-20T18:50:40.419554200+05:30  INFO   ├─ Screenshot Interval:    10 minutes
+2026-07-20T18:50:40.419568300+05:30  INFO   ├─ Location Update:        30 minutes
+2026-07-20T18:50:40.419582500+05:30  INFO   ├─ Idle Threshold:         60 seconds
+2026-07-20T18:50:40.419596900+05:30  INFO   ├─ Screenshot Quality:     75%
+2026-07-20T18:50:40.419610200+05:30  INFO   └─ App Poll Interval:      10 seconds
+2026-07-20T18:50:40.419653600+05:30  INFO 
+2026-07-20T18:50:40.419685200+05:30  INFO Starting activity tracker with idle threshold: 60s
+2026-07-20T18:50:40.419700300+05:30  INFO ✅ Using Windows GetLastInputInfo() API - no admin permissions required
+2026-07-20T18:50:40.419976300+05:30  INFO ✅ Genuine-activity detection enabled (window=60s, flag>=70)
+2026-07-20T18:50:40.420127600+05:30  INFO ✅ Activity tracker started
+2026-07-20T18:50:40.420155400+05:30  INFO Starting application usage tracker...
+2026-07-20T18:50:40.420314300+05:30  INFO Application usage tracking thread started successfully
+2026-07-20T18:50:40.420339500+05:30  INFO ✅ Application usage tracker started
+2026-07-20T18:50:40.420218300+05:30  INFO 🎯 Activity tracker polling thread started
+2026-07-20T18:50:40.420320900+05:30  INFO 🕵️  InputAnalyzer hooks installed (privacy-safe: no key identities recorded)
+2026-07-20T18:50:40.420402700+05:30  INFO App usage tracking loop started
+2026-07-20T18:50:40.420661400+05:30  INFO ✅ Configuration watcher started
+2026-07-20T18:50:40.420753300+05:30  INFO 🌍 Getting initial location...
+2026-07-20T18:50:40.420819900+05:30  INFO 🌍 Attempting to get location from IP address...
+2026-07-20T18:50:40.420865100+05:30  INFO 🚀 Starting configuration watcher
+2026-07-20T18:50:40.421041600+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:50:40.425975+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:50:40.426193100+05:30  INFO 📊 Initial config version: 1700591720
+2026-07-20T18:50:40.426260200+05:30  INFO ✅ Configuration watcher started
+2026-07-20T18:50:40.426373700+05:30  INFO 👁️ Watching for changes: .env
+2026-07-20T18:50:40.434464300+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:50:40.437712200+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:50:40.437858300+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:50:40.564934400+05:30  INFO ✅ Location detected successfully: Bengaluru, Karnataka, India
+2026-07-20T18:50:40.565094900+05:30  INFO ✅ Initial location: Bengaluru, Karnataka, India
+2026-07-20T18:50:40.565359300+05:30  INFO ✅ All monitoring tasks started successfully
+2026-07-20T18:50:40.565450400+05:30  INFO 🌐 Browser tab tracker task started (interval: 10s)
+2026-07-20T18:50:40.565464800+05:30  INFO 📤 Data transmission task started
+2026-07-20T18:50:40.565598200+05:30  INFO 🌍 Location tracker task started
+2026-07-20T18:50:40.565284900+05:30  INFO 📸 Screenshot capture task started
+2026-07-20T18:50:40.565698+05:30  INFO 🌍 Location update interval: 1800s
+2026-07-20T18:50:40.565586900+05:30  INFO 🔄 Queue processor task started (interval: 60s)
+2026-07-20T18:50:40.565633+05:30  INFO 🔍 Config force-check task started (interval: 5s)
+2026-07-20T18:50:40.565608600+05:30  INFO 📤 Data send interval: 60s
+2026-07-20T18:50:40.565744200+05:30  INFO 📸 Screenshot interval: 600s
+2026-07-20T18:50:40.565843200+05:30  INFO 💓 Heartbeat task started (interval: 45s -> http://localhost:5000/api/monitoring/heartbeat)
+2026-07-20T18:50:40.575126800+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:50:40.575209700+05:30  INFO 🌍 Updating location...
+2026-07-20T18:50:40.575282+05:30  INFO ✅ Location updated: Bengaluru, Karnataka, India
+2026-07-20T18:50:40.575283500+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:50:40.575346400+05:30  INFO 📤 Building and transmitting data payload...
+2026-07-20T18:50:40.575355300+05:30  INFO 📸 Capturing screenshot...
+2026-07-20T18:50:40.575575700+05:30  INFO App usage durations from tracker: 1 applications
+2026-07-20T18:50:40.575724500+05:30  INFO Returning 0 browser tab durations (from 0 open tabs)
+2026-07-20T18:50:40.575782900+05:30  INFO Browser tabs with durations: 0 tabs
+2026-07-20T18:50:40.575835200+05:30  INFO 📍 Getting location for payload...
+2026-07-20T18:50:40.575890200+05:30  INFO ✅ Location data for payload: Bengaluru, Karnataka, India
+2026-07-20T18:50:40.575947200+05:30  INFO Built payload for client 2e637352-5a84-4254-9494-a4388ef91911: 1s work, 0s idle, 1 apps, 0 tabs, screenshot: no, system_info: yes
+2026-07-20T18:50:40.578744400+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:50:40.578870+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:50:40.616686+05:30  INFO Payload transmitted successfully
+2026-07-20T18:50:40.616940400+05:30  INFO ✅ Data transmitted successfully
+2026-07-20T18:50:40.617023600+05:30  INFO ✅ System info sent and cleared (will not be sent again)
+2026-07-20T18:50:40.733320400+05:30  INFO 🛡️ Watchdog companion spawned (pid 2528)
+2026-07-20T18:50:40.733612200+05:30  INFO 
+2026-07-20T18:50:40.733662900+05:30  INFO ✅ Monitoring client started successfully
+2026-07-20T18:50:40.733686400+05:30  INFO 📍 Running in system tray - right-click icon for options
+2026-07-20T18:50:40.733734300+05:30  INFO ⌨️  Press Ctrl+C to stop monitoring
+2026-07-20T18:50:40.733761+05:30  INFO 
+2026-07-20T18:50:41.695989300+05:30  INFO ✅ Screenshot captured and stored
+2026-07-20T18:50:44.751882300+05:30  INFO 📋 Tray event received: ShowMenu
+2026-07-20T18:50:45.061778300+05:30  INFO Captured 9 open browser tab(s) across all windows
+2026-07-20T18:50:45.062042800+05:30  INFO Tracking 9 open browser tabs
+2026-07-20T18:50:45.578879400+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:50:45.579048+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:50:45.582267500+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:50:45.582375700+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:50:50.114773900+05:30  INFO ⏸️ Pause selected
+2026-07-20T18:50:50.114916200+05:30  INFO ⏸️ Pause monitoring
+2026-07-20T18:50:50.114935900+05:30  INFO ✅ Monitoring paused
+2026-07-20T18:50:50.439292900+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:50:50.442380300+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:50:50.442441200+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:50:50.578543200+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:50:50.578721700+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:50:50.581990700+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:50:50.582104400+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:50:54.811571200+05:30  INFO Captured 9 open browser tab(s) across all windows
+2026-07-20T18:50:54.811742400+05:30  INFO Tracking 9 open browser tabs
+2026-07-20T18:50:55.567080200+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:50:55.567525200+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:50:55.570290800+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:50:55.570363500+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:51:00.431383400+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:51:00.434518900+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:51:00.434609100+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:51:00.570888200+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:51:00.571062900+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:51:00.573996100+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:51:00.574074+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:51:01.786247900+05:30  INFO 📋 Tray event received: ShowMenu
+2026-07-20T18:51:04.337742900+05:30  INFO Captured 9 open browser tab(s) across all windows
+2026-07-20T18:51:04.337918100+05:30  INFO Tracking 9 open browser tabs
+2026-07-20T18:51:05.574095+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:51:05.574380900+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:51:05.577365200+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:51:05.577432800+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:51:08.849540900+05:30  INFO 📊 View-stats selected
+2026-07-20T18:51:08.849805900+05:30  INFO 📊 Opening self-view stats page: http://localhost:5000/self-view?usr=U2hyZXlhcw%3D%3D
+2026-07-20T18:51:10.434442900+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:51:10.437388400+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:51:10.437501500+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:51:10.574716300+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:51:10.574865+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:51:10.577437+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:51:10.577550300+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:51:15.048728100+05:30  INFO Captured 10 open browser tab(s) across all windows
+2026-07-20T18:51:15.049098+05:30  INFO Tracking 11 open browser tabs
+2026-07-20T18:51:15.579553400+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:51:15.579664500+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:51:15.581720400+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:51:15.581787700+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:51:20.433851500+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:51:20.437402500+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:51:20.437900700+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:51:20.574072700+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:51:20.574239800+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:51:20.576984100+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:51:20.577057+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:51:25.045595800+05:30  INFO Captured 10 open browser tab(s) across all windows
+2026-07-20T18:51:25.045931800+05:30  INFO Tracking 11 open browser tabs
+2026-07-20T18:51:25.572608100+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:51:25.572810100+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:51:25.575634300+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:51:25.575710700+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:51:30.440535600+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:51:30.444405900+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:51:30.444514600+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:51:30.580324900+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:51:30.580512700+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:51:30.583635600+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:51:30.583713+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:51:34.915737100+05:30  INFO Captured 10 open browser tab(s) across all windows
+2026-07-20T18:51:34.915902400+05:30  INFO Tracking 10 open browser tabs
+2026-07-20T18:51:35.577084500+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:51:35.577236900+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:51:35.580379800+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:51:35.580483700+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:51:40.436764700+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:51:40.441286700+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:51:40.441431900+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:51:40.576636600+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:51:40.576838200+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:51:40.579485700+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:51:40.579586400+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:51:45.030799900+05:30  INFO Captured 10 open browser tab(s) across all windows
+2026-07-20T18:51:45.031026200+05:30  INFO Tracking 11 open browser tabs
+2026-07-20T18:51:45.570845300+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:51:45.571051500+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:51:45.574002700+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:51:45.574076+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:51:50.441043100+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:51:50.444276900+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:51:50.444367700+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:51:50.567087300+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:51:50.567280700+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:51:50.570313200+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:51:50.570415200+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:51:54.824741600+05:30  INFO Captured 10 open browser tab(s) across all windows
+2026-07-20T18:51:54.824989400+05:30  INFO Tracking 11 open browser tabs
+2026-07-20T18:51:55.566228900+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:51:55.566402900+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:51:55.569551500+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:51:55.569623900+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:52:00.433919200+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:52:00.437305900+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:52:00.437384500+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:52:00.573391800+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:52:00.573583600+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:52:00.577279+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:52:00.577386600+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:52:05.066969700+05:30  INFO Captured 10 open browser tab(s) across all windows
+2026-07-20T18:52:05.067173200+05:30  INFO Tracking 11 open browser tabs
+2026-07-20T18:52:05.581607100+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:52:05.581828900+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:52:05.585035800+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:52:05.585145200+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:52:10.432775+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:52:10.436233800+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:52:10.436330300+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:52:10.572083400+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:52:10.572239200+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:52:10.575825+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:52:10.575961300+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:52:15.061216600+05:30  INFO Captured 10 open browser tab(s) across all windows
+2026-07-20T18:52:15.061377+05:30  INFO Tracking 10 open browser tabs
+2026-07-20T18:52:15.578868+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:52:15.579000900+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:52:15.581714200+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:52:15.581808+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:52:20.435064400+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:52:20.439908800+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:52:20.440036+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:52:20.575578200+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:52:20.575745500+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:52:20.578626100+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:52:20.578719700+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:52:24.814325200+05:30  INFO Captured 10 open browser tab(s) across all windows
+2026-07-20T18:52:24.814533100+05:30  INFO Tracking 10 open browser tabs
+2026-07-20T18:52:25.569976600+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:52:25.570162500+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:52:25.573868600+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:52:25.573976700+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:52:30.431900200+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:52:30.434846500+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:52:30.434926800+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:52:30.574604400+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:52:30.574891600+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:52:30.577911300+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:52:30.577991400+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:52:34.808470200+05:30  INFO Captured 10 open browser tab(s) across all windows
+2026-07-20T18:52:34.808630200+05:30  INFO Tracking 10 open browser tabs
+2026-07-20T18:52:35.567897400+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:52:35.568146700+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:52:35.570881300+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:52:35.570953400+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:52:40.440147100+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:52:40.445736100+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:52:40.445853+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:52:40.581323400+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:52:40.581475400+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:52:40.584227700+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:52:40.584326100+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:52:44.809166800+05:30  INFO Captured 10 open browser tab(s) across all windows
+2026-07-20T18:52:44.809324+05:30  INFO Tracking 10 open browser tabs
+2026-07-20T18:52:45.580635500+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:52:45.580822200+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:52:45.583951100+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:52:45.584049300+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:52:50.440031100+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:52:50.443383500+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:52:50.443508100+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:52:50.579717300+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:52:50.579952200+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:52:50.582863400+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:52:50.582958700+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:52:55.166125+05:30  INFO Captured 10 open browser tab(s) across all windows
+2026-07-20T18:52:55.166299200+05:30  INFO Tracking 10 open browser tabs
+2026-07-20T18:52:55.573379200+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:52:55.573478400+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:52:55.577993+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:52:55.578117700+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:52:59.635658800+05:30  INFO 📋 Tray event received: ShowMenu
+2026-07-20T18:53:00.431290900+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:53:00.435527400+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:53:00.435803500+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:53:00.569486900+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:53:00.569639500+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:53:00.571747200+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:53:00.571822400+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
+2026-07-20T18:53:05.571358200+05:30  INFO 🔍 Manual configuration check triggered
+2026-07-20T18:53:05.571565800+05:30  INFO 🌐 Fetching config version from: http://localhost:5000/api/client-env
+2026-07-20T18:53:05.574388500+05:30  INFO ✅ Server config version: 1700591720
+2026-07-20T18:53:05.574476300+05:30  INFO 📊 Config versions - Current: 1700591720, Server: 1700591720
