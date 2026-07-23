@@ -1,0 +1,128 @@
+2026-07-22 16:57:43 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-17\2026-07-17T10-32-11-769Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T10-32-11-769Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T10-32-11-769Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 16:57:43 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-17\2026-07-17T10-33-53-578Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T10-33-53-578Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T10-33-53-578Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 16:57:43 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-17\2026-07-17T10-31-53-570Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T10-31-53-570Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T10-31-53-570Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 16:58:33 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-17\2026-07-17T09-23-53-569Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T09-23-53-569Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T09-23-53-569Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 16:58:33 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-16\2026-07-16T12-53-16-659Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-53-16-659Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-53-16-659Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 16:58:33 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-16\2026-07-16T12-43-16-659Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-43-16-659Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-43-16-659Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 16:58:33 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-16\2026-07-16T12-33-16-658Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-33-16-658Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-33-16-658Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 16:58:46 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-16\2026-07-16T12-23-16-658Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-23-16-658Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-23-16-658Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 16:58:46 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-16\2026-07-16T08-11-50-001Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T08-11-50-001Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T08-11-50-001Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 16:58:46 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-16\2026-07-16T08-01-50-010Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T08-01-50-010Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T08-01-50-010Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:29:50 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-17\2026-07-17T10-32-11-769Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T10-32-11-769Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T10-32-11-769Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:29:50 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-17\2026-07-17T10-33-53-578Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T10-33-53-578Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T10-33-53-578Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:29:51 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-17\2026-07-17T10-31-53-570Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T10-31-53-570Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T10-31-53-570Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:29:51 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-17\2026-07-17T09-23-53-569Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T09-23-53-569Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T09-23-53-569Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:29:51 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-16\2026-07-16T12-53-16-659Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-53-16-659Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-53-16-659Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:29:51 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-16\2026-07-16T12-33-16-658Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-33-16-658Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-33-16-658Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:29:51 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-16\2026-07-16T12-43-16-659Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-43-16-659Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-43-16-659Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:31:46 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-16\2026-07-16T12-23-16-658Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-23-16-658Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-23-16-658Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:31:46 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-16\2026-07-16T08-11-50-001Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T08-11-50-001Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T08-11-50-001Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:31:46 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-16\2026-07-16T08-01-50-010Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T08-01-50-010Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T08-01-50-010Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:32:55 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-16\2026-07-16T08-11-50-001Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T08-11-50-001Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T08-11-50-001Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:36:04 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-17\2026-07-17T10-33-53-578Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T10-33-53-578Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T10-33-53-578Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:36:04 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-17\2026-07-17T10-32-11-769Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T10-32-11-769Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T10-32-11-769Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:36:04 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-17\2026-07-17T10-31-53-570Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T10-31-53-570Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T10-31-53-570Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:36:04 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-17\2026-07-17T09-23-53-569Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T09-23-53-569Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T09-23-53-569Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:36:04 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-16\2026-07-16T12-53-16-659Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-53-16-659Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-53-16-659Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:36:04 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-16\2026-07-16T12-43-16-659Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-43-16-659Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-43-16-659Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:36:04 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-16\2026-07-16T12-33-16-658Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-33-16-658Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-33-16-658Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:36:04 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-16\2026-07-16T12-23-16-658Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-23-16-658Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T12-23-16-658Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:36:05 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-16\2026-07-16T08-11-50-001Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T08-11-50-001Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T08-11-50-001Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:36:05 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-16\2026-07-16T08-01-50-010Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T08-01-50-010Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-16\2026-07-16T08-01-50-010Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
+2026-07-22 17:37:10 [ERROR]: Screenshot file not found on disk: screenshots\Shreyas\2026-07-17\2026-07-17T09-23-53-569Z.jpg ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T09-23-53-569Z.jpg'
+Error: ENOENT: no such file or directory, stat 'D:\Projects\VibgyorSeek\monitoring-server\screenshots\Shreyas\2026-07-17\2026-07-17T09-23-53-569Z.jpg'
+    at async Object.stat (node:internal/fs/promises:1040:18)
+    at async D:\Projects\VibgyorSeek\monitoring-server\src\routes\screenshot.routes.ts:66:7
