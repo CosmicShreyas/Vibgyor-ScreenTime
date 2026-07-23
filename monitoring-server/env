@@ -1,0 +1,38 @@
+# Server Configuration
+PORT=5000
+NODE_ENV=development
+
+# MongoDB Configuration
+MONGODB_URI=mongodb://localhost:27017/vibgyorseek_monitoring
+
+# Screenshot Storage
+SCREENSHOT_STORAGE_PATH=./screenshots
+SCREENSHOT_TTL_DAYS=10
+
+# Authentication
+CLIENT_AUTH_TOKEN=vibgyorseek-client-token-2024
+JWT_SECRET=vibgyorseek-jwt-secret-key-2024
+# Admin Password (for employee info setup/updates)
+ADMIN_PASSWORD=admin123
+# Admin Email (for OTP verification)
+ADMIN_EMAIL=brilliantshreyas@gmail.com
+
+# Logging
+LOG_LEVEL=debug
+
+# Shift Time Configuration (24-hour format: 0-23)
+# Timeline will display data between these hours
+SHIFT_START_HOUR=9
+SHIFT_END_HOUR=20
+
+# SMTP Configuration for Email Reports
+SMTP_EMAIL=chat@vibgyor.co.in
+SMTP_APP_PASSWORD="biqe kobn wtao gzcb"
+
+# EOD Reports Configuration
+# Time to send daily End-of-Day reports (24-hour format HH:MM)
+# Default is 00:00 (midnight)
+EOD_REPORT_TIME=00:00
+# Business timezone for all reporting/day-boundary math (IANA name).
+# Clients send UTC; reports are computed relative to this zone.
+APP_TIMEZONE=Asia/Kolkata
