@@ -1,7 +1,0 @@
-{
-  "enabled": false,
-  "recipients": [],
-  "schedule": "weekly",
-  "dayOfWeek": 1,
-  "timeOfDay": "09:00"
-}
