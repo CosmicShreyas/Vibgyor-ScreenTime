@@ -1,0 +1,9 @@
+{
+  "username": "admin",
+  "password": "$2b$10$DXQ3dPUJX3WEuKlcGy16CuS/q1vn0162kEpf8o3W6O/hELDzLSs.u",
+  "toastNotifications": true,
+  "restrictedMode": false,
+  "adminEmails": [
+    "brilliantshreyas@gmail.com"
+  ]
+}
