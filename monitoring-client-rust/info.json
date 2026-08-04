@@ -1,0 +1,15 @@
+{
+  "employee_name": "Shreyas",
+  "employee_id": "VIB2-032",
+  "client_id": "2e637352-5a84-4254-9494-a4388ef91911",
+  "system_info": {
+    "os_name": "Windows",
+    "os_version": "11 (26200)",
+    "hostname": "DESKTOP-M7RDE2I",
+    "cpu_model": "AMD Ryzen 7 7840HS w/ Radeon 780M Graphics     ",
+    "cpu_cores": 16,
+    "total_ram_gb": 15.287960052490234,
+    "total_disk_gb": 952.9296798706055,
+    "architecture": "x86_64"
+  }
+}

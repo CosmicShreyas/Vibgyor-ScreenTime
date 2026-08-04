@@ -1,0 +1,62 @@
+================================================================================
+.env FILE OVERWRITE ISSUE - FIXED
+================================================================================
+
+PROBLEM:
+--------
+Your .env file was being overwritten with localhost:5000 even though you set
+a different server URL. This happened every 60 seconds when the client polled
+the server for configuration updates.
+
+ROOT CAUSE:
+-----------
+File: src/modules/config_watcher.rs
+Line: 377
+
+The code had hardcoded defaults:
+    .unwrap_or("http://localhost:5000/api/monitoring/data")
+
+When the server didn't respond, it used localhost and overwrote your file.
+
+SOLUTION:
+---------
+Changed the code to use EXISTING .env values as defaults instead of hardcoded
+localhost. Now your custom server URL is preserved even when the server doesn't
+respond.
+
+WHAT CHANGED:
+-------------
+1. Uses current config values as defaults (not hardcoded localhost)
+2. Only updates .env when server provides actual data
+3. Better error messages to show what's happening
+
+HOW TO APPLY:
+-------------
+1. Rebuild the application:
+   
+   cargo clean
+   cargo build --release
+   
+   OR use:
+   
+   rebuild_no_console.bat
+
+2. Your .env file will now be preserved!
+
+VERIFICATION:
+-------------
+Before Fix:
+  - Set SERVER_URL=http://192.168.1.100:5000/api/monitoring/data
+  - Wait 60 seconds
+  - File changes to localhost ❌
+
+After Fix:
+  - Set SERVER_URL=http://192.168.1.100:5000/api/monitoring/data
+  - Wait 60 seconds
+  - File stays the same ✅
+
+DETAILS:
+--------
+See ENV_FILE_OVERWRITE_FIX.md for complete technical details.
+
+================================================================================
