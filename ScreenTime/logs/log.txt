@@ -1,1 +1,0 @@
-2026-08-10T13:37:31.964292400+05:30  WARN ⚠️ ADMIN_PASSWORD not set in environment, using default
