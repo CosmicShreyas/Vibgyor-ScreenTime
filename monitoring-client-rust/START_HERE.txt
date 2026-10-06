@@ -1,0 +1,50 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║              VibgyorSeek Monitoring Client - START HERE                    ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+CONSOLE WINDOW KEEPS APPEARING? HERE'S THE FIX!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STEP 1: REBUILD (Do this ONCE)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+    Double-click:  rebuild_no_console.bat
+
+    Wait for "SUCCESS!" message.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STEP 2: RUN (Do this EVERY TIME)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+    Double-click:  start_hidden.vbs
+
+    ✓ NO console window will appear
+    ✓ System tray icon will appear
+    ✓ Everything works normally
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+THAT'S IT! 🎉
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+IMPORTANT NOTES:
+
+    ❌ DO NOT run from Command Prompt or PowerShell
+    ❌ DO NOT run the .exe file directly from a terminal
+    
+    ✅ ALWAYS use start_hidden.vbs to launch
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NEED MORE HELP?
+
+    Quick Guide:     QUICK_FIX_CONSOLE.md
+    Detailed Guide:  CONSOLE_WINDOW_FIX.md
+    How to Run:      HOW_TO_RUN.txt
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
